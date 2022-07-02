@@ -108,3 +108,8 @@ function shuffle() {
 }
 
 shuffle();
+
+//adiciona evento de clique na carta
+cards.forEach((card) => {
+    card.addEventListener('click', flipCard)
+});
