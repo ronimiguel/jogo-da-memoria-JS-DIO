@@ -98,3 +98,13 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
+//função que embaralha as cartas
+function shuffle() {
+    cards.forEach((card) => {
+        let ramdomPosition = Math.floor(Math.random() * 28);
+        card.style.order = ramdomPosition;
+    })
+}
+
+shuffle();
