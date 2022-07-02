@@ -25,9 +25,8 @@ body {
 
 .score-board {
     background-color: black;
-    height: 645px;
+    height:735px;
     width: 350px;
-    /* padding: 5px; */
     margin: 7px 0px 0px 10px;
     border: 3px;
     border-style: solid;
@@ -57,10 +56,10 @@ body {
 
 .score, .tries {
     background-color: #FFFEFE;
-    border: 1px;
+    border: 8px;
     border-style: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: #ffec64;
     height: 90px;
     width: 110px;
     display: flex;
