@@ -72,3 +72,24 @@ return;
 
     unflipCards();
 }
+
+//função que desabilita as cartas
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+
+    resetBoard();
+}
+
+//funcão que desvira as cartas
+function unflipCards() {
+    lockBoard = true;
+
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+
+        resetBoard();
+    }, 1500);
+}
+
