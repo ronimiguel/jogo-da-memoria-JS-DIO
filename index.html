@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Jogo da memória</title>
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo do Star Trek" class="logo">
+        </div>
+        <div class="score-board">
+            <div class="nome-jogo">Jogo da Memória</div>
+            <div class="board">Score</div>
+            <div class="score"></div>
+            <div class="board">Tentativas</div>
+            <div class="tries"></div>
+            <div class="board-botao"><button id="restart">Reiniciar</button></div>
+        </div>
+    </section>
+    <main class="memory-game">
+        <div class="card" data-card="7of9">
+            <img class="card-front" src="./assets/img/7of9.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="archer">
+            <img class="card-front" src="./assets/img/archer.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="chakotay">
+            <img class="card-front" src="./assets/img/chakotay.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="data">
+            <img class="card-front" src="./assets/img/data.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="janeway">
+            <img class="card-front" src="./assets/img/janeway.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="laforge">
+            <img class="card-front" src="./assets/img/laforge.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+
+        <div class="card" data-card="kirk">
+            <img class="card-front" src="./assets/img/kirk.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="odo">
+            <img class="card-front" src="./assets/img/odo.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="picard">
+            <img class="card-front" src="./assets/img/picard.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="q">
+            <img class="card-front" src="./assets/img/q.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="quark">
+            <img class="card-front" src="./assets/img/quark.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="sisko">
+            <img class="card-front" src="./assets/img/sisko.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="spock">
+            <img class="card-front" src="./assets/img/spock.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="uhura">
+            <img class="card-front" src="./assets/img/uhura.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="worf">
+            <img class="card-front" src="./assets/img/worf.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+         <div class="card" data-card="7of9">
+            <img class="card-front" src="./assets/img/7of9.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="archer">
+            <img class="card-front" src="./assets/img/archer.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="chakotay">
+            <img class="card-front" src="./assets/img/chakotay.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="data">
+            <img class="card-front" src="./assets/img/data.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="janeway">
+            <img class="card-front" src="./assets/img/janeway.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+            <div class="card" data-card="laforge">
+            <img class="card-front" src="./assets/img/laforge.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="kirk">
+            <img class="card-front" src="./assets/img/kirk.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="odo">
+            <img class="card-front" src="./assets/img/odo.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="picard">
+            <img class="card-front" src="./assets/img/picard.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="q">
+            <img class="card-front" src="./assets/img/q.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="quark">
+            <img class="card-front" src="./assets/img/quark.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="sisko">
+            <img class="card-front" src="./assets/img/sisko.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="spock">
+            <img class="card-front" src="./assets/img/spock.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="uhura">
+            <img class="card-front" src="./assets/img/uhura.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="worf">
+            <img class="card-front" src="./assets/img/worf.png" alt="Face da carta">
+            <img class="card-back" src="./assets/img/box.png" alt="Verso da carta">
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
