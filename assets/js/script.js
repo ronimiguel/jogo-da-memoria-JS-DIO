@@ -113,3 +113,10 @@ shuffle();
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
 });
+
+//função para reiniciar o jogo
+function restart() {
+    window.location.reload();
+}
+
+document.getElementById("restart").addEventListener("click",restart);
