@@ -93,3 +93,8 @@ function unflipCards() {
     }, 1500);
 }
 
+//função que reseta o tabuleiro
+function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
