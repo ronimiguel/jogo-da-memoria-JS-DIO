@@ -5,7 +5,7 @@
 O jogo é com personagens da série STAR TREK da qual eu sou muito fã, tem 14 pares diferentes de cartas com o total de 28 cartas.
 
 Antes de iniciar o projeto eu decidi quais seriam as funcionalidades do jogo conforme abaixo: 
- - Mostrar cartas no início para que o jogador tenha tempo de decorar alguns pares.
+ - Mostrar cartas no início para que o jogador tenha tempo de memorizar alguns pares.
  - Marcar o número de pontos do jogador
  - Número máximo de tentativas
  - Botão para reiniciar a partida
