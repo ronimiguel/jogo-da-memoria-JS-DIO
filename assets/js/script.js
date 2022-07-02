@@ -26,3 +26,12 @@ function flipAllCards(cardList){
 }, 5000);
 
 }
+
+//mostra todas as cartas quando acabar as tentativas
+function gameOver(cardList){
+    for(card of cardList){
+        card.classList.add('flip');
+    }
+}
+flipAllCards(cardList);
+
