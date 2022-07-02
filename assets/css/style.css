@@ -105,7 +105,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    perspective: 1000px; /* perspectiva do usuario no eixo z, quanto maior, maior o efeito da perspectiva */
+    perspective: 1000px; /* perspectiva do eixo z, maior valor, maior o efeito da perspectiva */
 }
 
 .card {
