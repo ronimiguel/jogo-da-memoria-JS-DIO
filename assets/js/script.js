@@ -35,3 +35,40 @@ function gameOver(cardList){
 }
 flipAllCards(cardList);
 
+
+//função para virar carta
+function flipCard() {
+    if(lockBoard) return;
+    if(this === firstCard) return;
+
+    this.classList.add('flip');
+    if(!hasFlippedCard) {
+        hasFlippedCard = true;
+        firstCard = this;
+        return;
+    }
+
+    secondCard = this;
+    hasFlippedCard = false;
+    checkForMatch();
+}
+
+//função que checa se as cartas são iguais
+function checkForMatch() {
+    if(firstCard.dataset.card === secondCard.dataset.card) {
+        disableCards();
+        score++;
+        document.querySelector(".score").innerHTML = score;
+        return;
+    }else{
+        tries--;
+        document.querySelector(".tries").innerHTML = tries;
+        if(tries === 0){
+            document.querySelector(".tries").innerHTML =  "GAME OVER";
+            gameOver(cardList);
+return;
+        }
+    }
+
+    unflipCards();
+}
