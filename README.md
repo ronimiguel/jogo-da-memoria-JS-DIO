@@ -14,7 +14,7 @@ Desafio concluído com sucesso! Consegui implementar tudo que eu decidi previame
 
 Foi muito legal colocar em prática o conteúdo aprendido no bootcamp, com certeza após esse projeto JavaScript virou minha paixão. 
 
-![image-20220702190222401](/home/roni/.config/Typora/typora-user-images/image-20220702190222401.png)
+![image-20220702190222401](./assets/img/projeto-jogo-memoria.png)
 
 Este projeto não tem fins lucrativos e serve apenas para uso pessoal como portifólio de projeto.
 Todas as imagens foram retiradas da internet e os direitos autorais são da [Paramount Pictures Corporation](http://www.paramount.com/). 
