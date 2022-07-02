@@ -10,11 +10,13 @@ body {
     background-color: #FFFEFE;
 }
 
+/* logotipo do Star Trek */
 .logo {
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
 }
 
+/* Score board */
 .nome-jogo {
     color: #ffec64; 
     font-size: 2em;
@@ -23,7 +25,7 @@ body {
 
 .score-board {
     background-color: black;
-    height: 400px;
+    height: 645px;
     width: 350px;
     /* padding: 5px; */
     margin: 7px 0px 0px 10px;
@@ -93,4 +95,53 @@ body {
 #restart:active {
 	position:relative;
 	top:1px;
+}
+
+/* Cartas */
+.memory-game {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    perspective: 1000px; /* perspectiva do usuario no eixo z, quanto maior, maior o efeito da perspectiva */
+}
+
+.card {
+    height: 190px;
+    width: 177px;
+    margin: 6px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0 , 0.5);
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .8s;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  background: #ffab23;
+  backface-visibility: hidden;
+}
+
+/* Animação das Cartas */
+.card-front {
+    transform: rotateY(180deg); 
+}
+
+.card.flip {
+    transform: rotateY(180deg);
 }
